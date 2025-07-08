@@ -1,4 +1,4 @@
-name: star_taskz
+name: leaf_board
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -63,6 +63,12 @@ flutter:
     - assets\images\onboaarding2.png
     - assets\images\onboarding3.jpg
     - assets\images\splash_logo.jpg
+    - assets\images\onbording4.jpg
+    - assets\images\welcome_screen.jpg
+    - assets\images\google.png
+    - assets\images\Apple.png
+    - assets\images\movies.jpg
+    - assets\images\Favourites.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
