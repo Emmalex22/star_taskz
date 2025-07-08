@@ -22,30 +22,31 @@ class _SplashScreenState extends State<SplashScreen> {
     });
   }
   @override
-Widget build(BuildContext context) {
-  return Scaffold(
-    backgroundColor: Colors.white,
-    body: Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(
-            'assets/images/splash_logo.jpg',
-            width: 184,
-            height: 184,
-            fit: BoxFit.contain,
-          ),
-          const SizedBox(height: 16.0),
-          const Text(
-            'Leaf Board',
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'Montserrat',
+    Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'assets/images/splash_logo.jpg',
+              width: 184,
+              height: 184,
+              fit: BoxFit.contain,
             ),
-          )  
-        ]
+            const SizedBox(height: 16.0),
+            const Text(
+              'Leaf Board',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Montserrat',
+              ),
+            )  
+          ]
+        ),
       ),
-    ),
-  );
-}}
+    );
+  }
+}
