@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     //delay for 3 seconds, then navigate to the welcome screen
     Future.delayed(Duration(seconds: 3), () {
-      if (mounted) {
+      if (!mounted) return; {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (context) => const WelcomeScreen())
@@ -30,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/images/splash_logo.jpg',
+              'assets/images/logo.jpg',
               width: 184,
               height: 184,
               fit: BoxFit.contain,

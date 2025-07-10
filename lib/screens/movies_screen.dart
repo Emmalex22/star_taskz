@@ -11,9 +11,9 @@ class MoviesScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'Movies.jpg',
-              height: 32,
-              width: 32,
+              'assets/images/movies.jpg',
+              height: 323,
+              width: 400,
             ),
             SizedBox(height: 32),
             const Text(

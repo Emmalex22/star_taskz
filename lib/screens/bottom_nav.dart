@@ -31,7 +31,7 @@ class _BottomNavState extends State<BottomNav> {
         onTap: showOnTap,
         type: BottomNavigationBarType.fixed,
         selectedItemColor: Colors.greenAccent,
-        unselectedItemColor: Colors.grey,
+        unselectedItemColor: Colors.black,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),

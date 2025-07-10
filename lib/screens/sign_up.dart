@@ -49,7 +49,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           'Create an Account',
           style: TextStyle(
             fontFamily: 'Montserrat',
-            fontSize: 28,
+            fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
         ),
@@ -82,63 +82,48 @@ class _SignUpScreenState extends State<SignUpScreen> {
               hiddenText: true,
               label: 'Password',
             ),
-            const SizedBox(height: 16),
-            Align(
-              alignment: Alignment.centerRight,
-              child: TextButton(
-                onPressed: () {
-                  //implement password reset
-                },
-                child: const Text(
-                  'Forgot password?',
-                  style: TextStyle(
-                    color: Colors.red,
-                    fontSize: 16,
-                    fontFamily: 'Montserrat',
-                  ),
-                ),
-              ),
-            ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 32),
             ElevatedButton(
               onPressed: handleSignup,
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 16),
+                backgroundColor: Colors.green,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(32),
                 ),
               ),
               child: const Text(
                 'Sign Up',
                 style: TextStyle(
                   fontFamily: 'Montserrat',
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.white
                 ),
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 16),
 
             // Social buttons
             const Text(
               'or continue with',
               textAlign: TextAlign.center,
-              style: TextStyle(fontFamily: 'Montserrat', fontSize: 14),
+              style: TextStyle(fontFamily: 'Montserrat', fontSize: 16, fontWeight: FontWeight.w800),
             ),
             const SizedBox(height: 16),
             OutlinedButton.icon(
               onPressed: () {
                 // handle Google login
               },
-              icon: Image.asset('assets/google.png', height: 24, width: 24),
+              icon: Image.asset('assets/images/google.png', height: 24, width: 24),
               label: const Text(
                 'Continue with Google',
-                style: TextStyle(fontFamily: 'Montserrat', fontSize: 16),
+                style: TextStyle(fontFamily: 'Montserrat', fontSize: 16, fontWeight: FontWeight.w800),
               ),
               style: OutlinedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(32),
                 ),
               ),
             ),
@@ -147,15 +132,15 @@ class _SignUpScreenState extends State<SignUpScreen> {
               onPressed: () {
                 // handle Apple login
               },
-              icon: Image.asset('assets/Apple.png', height: 24, width: 24),
+              icon: Image.asset('assets/images/Apple.png', height: 24, width: 24),
               label: const Text(
                 'Continue with Apple',
-                style: TextStyle(fontFamily: 'Montserrat', fontSize: 16),
+                style: TextStyle(fontFamily: 'Montserrat', fontSize: 16, fontWeight: FontWeight.w800),
               ),
               style: OutlinedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 16),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(32),
                 ),
               ),
             ),
@@ -171,6 +156,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     fontSize: 16,
                     fontFamily: 'Montserrat',
                     color: Colors.black,
+                    fontWeight: FontWeight.w800
                   ),
                 ),
                 GestureDetector(
@@ -183,7 +169,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   child: const Text(
                     "Login",
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 18,
                       fontFamily: 'Montserrat',
                       color: Colors.green,
                       fontWeight: FontWeight.bold,

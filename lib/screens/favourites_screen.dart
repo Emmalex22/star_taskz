@@ -11,9 +11,9 @@ class FavoritesScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-              'Favourites.jpg',
-              height: 32,
-              width: 32,
+              'assets/images/Favourites.jpg',
+              height: 330,
+              width: 330,
             ),
             SizedBox(height: 32),
             const Text(

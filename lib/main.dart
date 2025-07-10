@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'screens/bottom_nav.dart';
+import 'package:leaf_board/screens/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         fontFamily: 'Montserrat',
       ),
-      home: const BottomNav(),
+      home: const SplashScreen(),
     );
   }
 }

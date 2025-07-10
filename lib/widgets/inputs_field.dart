@@ -24,7 +24,7 @@ class InputField extends StatelessWidget {
           style: TextStyle(
             fontSize: 16,
             fontFamily: 'Montserrat',
-            fontWeight: FontWeight.normal
+            fontWeight: FontWeight.w800
           ), 
         ),
         const SizedBox(height: 8),
@@ -34,11 +34,11 @@ class InputField extends StatelessWidget {
         decoration: InputDecoration(
           hintText: 'Enter your $label',
           filled: true,
-          fillColor: Colors.grey[300],
-          contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 12.0),
+          fillColor: Colors.white,
+          contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 16.0),
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8),
-            borderSide: const BorderSide(color: Colors.grey, width: 2),
+            borderSide: const BorderSide(color: Colors.grey, width: 1),
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(8),
